@@ -62,7 +62,7 @@ WebpackCordovaPlugin.prototype.apply  = function(compiler){
      */
     if(compiler.options.reload){
       var ip = compiler.options.reload === true? 'localhost':compiler.options.reload;
-      src = "http://" + ip + ":8080/" + src;
+      src = "http://" + ip + ":9000/";
     }
     try {
       replace({
